@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onur Koc – Engineering Apps</title>
+<meta name="description" content="Browser tools for tunnel and structural engineering by Onur Koc.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28V16a12 12 0 0 1 24 0v12' fill='none' stroke='%23c2410c' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f5f2;
+    --surface: #ffffff;
+    --text: #1c1b19;
+    --muted: #5f5c55;
+    --line: #dedbd3;
+    --accent: #c2410c;
+    --accent-soft: #fbe9df;
+    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413;
+      --surface: #1d1c1a;
+      --text: #f1efe9;
+      --muted: #a6a29a;
+      --line: #34322e;
+      --accent: #f07a3e;
+      --accent-soft: #3a2418;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+  header { padding: 72px 0 40px; position: relative; }
+  .profile {
+    position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none;
+  }
+  .profile svg { position: absolute; right: -40px; bottom: 0; width: 520px; max-width: 70%; opacity: .5; }
+  .eyebrow {
+    font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 {
+    font-size: clamp(32px, 6vw, 48px); line-height: 1.1; margin: 0 0 16px;
+    letter-spacing: -.02em; font-weight: 700;
+  }
+  .lead { font-size: 18px; color: var(--muted); max-width: 560px; margin: 0; }
+
+  main { padding: 8px 0 64px; }
+  .grid {
+    display: grid; gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .card {
+    display: flex; flex-direction: column;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px; text-decoration: none; color: inherit; box-shadow: var(--shadow);
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .card:hover, .card:focus-visible { transform: translateY(-3px); border-color: var(--accent); outline: none; }
+  .icon {
+    width: 48px; height: 48px; border-radius: 10px; background: var(--accent-soft);
+    display: grid; place-items: center; margin-bottom: 18px; color: var(--accent);
+  }
+  .icon svg { width: 28px; height: 28px; }
+  .card h2 { font-size: 20px; margin: 0 0 6px; letter-spacing: -.01em; }
+  .card p { margin: 0 0 18px; color: var(--muted); font-size: 15px; flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .tag {
+    font-size: 12px; padding: 2px 8px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+  }
+  .go { font-size: 14px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+  .go span { display: block; font-weight: 400; font-size: 13px; color: var(--muted); white-space: normal; overflow-wrap: anywhere; }
+
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="profile" aria-hidden="true">
+      <svg viewBox="0 0 520 260" fill="none">
+        <path d="M60 260V150a200 110 0 0 1 400 0v110" stroke="var(--line)" stroke-width="2"/>
+        <path d="M90 260V156a170 92 0 0 1 340 0v104" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="6 6"/>
+      </svg>
+    </div>
+    <div class="wrap">
+      <p class="eyebrow">Onur Koc · Tunnel &amp; Geotechnical Engineering</p>
+      <h1>Engineering Apps</h1>
+      <p class="lead">Small browser tools from my daily work in tunnelling and structural design. They run entirely in your browser, with no installation and no data upload.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <a class="card" href="https://groundcurve.onurkoc.net">
+        <div class="icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 4c2 9 8 15 20 18"/><path d="M4 24l8-8h12"/>
+          </svg>
+        </div>
+        <h2>GroundCurve</h2>
+        <p>Convergence–confinement method: ground reaction curve, longitudinal displacement profile and support characteristics for shotcrete, rock bolts and yielding elements.</p>
+        <div class="tags"><span class="tag">Tunnelling</span><span class="tag">Hoek</span><span class="tag">Vlachopoulos &amp; Diederichs</span></div>
+        <div class="go">Open app → <span>groundcurve.onurkoc.net</span></div>
+      </a>
+
+      <a class="card" href="https://interaction-diagram.onurkoc.net">
+        <div class="icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M14 3c7 3 10 7 10 11s-3 8-10 11C7 22 4 18 4 14s3-8 10-11z"/><path d="M4 14h20M14 3v22" stroke-width="1.2" opacity=".6"/>
+          </svg>
+        </div>
+        <h2>Interaction Diagram</h2>
+        <p>M–N interaction diagram for reinforced concrete cross-sections according to Eurocode 2.</p>
+        <div class="tags"><span class="tag">Structural</span><span class="tag">EN 1992-1-1</span></div>
+        <div class="go">Open app → <span>interaction-diagram.onurkoc.net</span></div>
+      </a>
+
+      <a class="card" href="https://cv.onurkoc.net">
+        <div class="icon">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="14" cy="10" r="4.5"/><path d="M5 24c1.5-5 5-7.5 9-7.5s7.5 2.5 9 7.5"/>
+          </svg>
+        </div>
+        <h2>Curriculum Vitae</h2>
+        <p>Background, projects and experience in conventional tunnelling, TBM, geotechnical engineering and underground structures.</p>
+        <div class="tags"><span class="tag">About me</span></div>
+        <div class="go">Open → <span>cv.onurkoc.net</span></div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y">2026</span> Onur Koc · <a href="https://cv.onurkoc.net">cv.onurkoc.net</a></div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
