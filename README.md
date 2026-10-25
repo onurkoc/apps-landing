@@ -5,6 +5,7 @@ Static landing page for **apps.onurkoc.net**, linking to:
 - https://cv.onurkoc.net
 - https://interaction-diagram.onurkoc.net
 - https://groundcurve.onurkoc.net
+- https://shear.onurkoc.net
 - https://settlement.onurkoc.net
 
 ## Hosting
