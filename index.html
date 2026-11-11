@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Onur Koc – Engineering Apps</title>
-<meta name="description" content="Browser tools for tunnel and structural engineering by Onur Koc.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28V16a12 12 0 0 1 24 0v12' fill='none' stroke='%23c2410c' stroke-width='3'/%3E%3C/svg%3E">
+<title>Onur Koç – Engineering Apps</title>
+<meta name="description" content="Browser tools for tunnel and structural engineering by Onur Koç.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 28V16a12 12 0 0 1 24 0v12' fill='none' stroke='%23c8261a' stroke-width='3'/%3E%3C/svg%3E">
 <script>
   // theme and language before first paint, so nothing flickers
   (function () {
@@ -29,20 +29,20 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
   :root {
-    --bg: #fbfaf7; --well: #f1eee7; --ink: #141413; --muted: #5e5b55;
-    --line: #dedbd4; --accent: #ae4a17; --chip: #141413; --chip-fg: #fbfaf7;
+    --bg: #ffffff; --well: #efefef; --ink: #111111; --muted: #6b6b6b;
+    --line: #d9d9d9; --accent: #c8261a; --chip: #111111; --chip-fg: #ffffff;
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #111110; --well: #1c1b19; --ink: #f1efea; --muted: #a9a59e;
-      --line: #34322f; --accent: #f0915a; --chip: #f1efea; --chip-fg: #111110;
+      --bg: #111111; --well: #1c1c1c; --ink: #f5f5f5; --muted: #a3a3a3;
+      --line: #333333; --accent: #ee5446; --chip: #f5f5f5; --chip-fg: #111111;
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #111110; --well: #1c1b19; --ink: #f1efea; --muted: #a9a59e;
-    --line: #34322f; --accent: #f0915a; --chip: #f1efea; --chip-fg: #111110;
+    --bg: #111111; --well: #1c1c1c; --ink: #f5f5f5; --muted: #a3a3a3;
+    --line: #333333; --accent: #ee5446; --chip: #f5f5f5; --chip-fg: #111111;
     color-scheme: dark;
   }
   * { box-sizing: border-box; }
@@ -133,7 +133,7 @@
 
   <div class="main">
     <section class="intro">
-      <h1>Onur Koc</h1>
+      <h1>Onur Koç</h1>
       <p class="role" data-i18n="role">Tunnel &amp; Geotechnical Engineering</p>
       <p class="lead" data-i18n="intro">Small browser tools from my daily work in tunnelling and structural design. They run entirely in your browser, with no installation and no data upload.</p>
     </section>
@@ -141,7 +141,7 @@
     <nav aria-label="Apps">
       <a class="item" href="https://groundcurve.onurkoc.net">
         <span class="nr mono">01</span>
-        <span class="pic"><svg viewBox="0 0 120 72" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6V62H112" opacity=".4"/><path d="M12 12C36 38 66 54 110 58"/><path d="M38 62L86 20"/><circle cx="66" cy="38" r="3" fill="currentColor"/></svg></span>
+        <span class="pic"><svg viewBox="0 0 120 72" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6V62H112" opacity=".4"/><path d="M12 12C36 38 66 54 110 58"/><path d="M38 62L86 20"/><circle cx="57.37" cy="45.05" r="3" fill="currentColor"/></svg></span>
         <span class="text">
           <span class="name">GroundCurve</span>
           <span class="desc" data-i18n="gc.desc">Ground reaction curve, longitudinal displacement profile and support characteristics for shotcrete, rock bolts and yielding elements.</span>
@@ -183,8 +183,19 @@
         <span class="arrow" aria-hidden="true">→</span>
       </a>
 
-      <a class="item" href="https://cv.onurkoc.net">
+      <a class="item" href="https://joints.onurkoc.net">
         <span class="nr mono">05</span>
+        <span class="pic"><svg viewBox="0 0 120 72" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M60 3V69M27 36H93" opacity=".4"/><circle cx="60" cy="36" r="30"/><path d="M60 6A38 38 0 0 1 60 66"/><path d="M84.6 18.8A38 38 0 0 1 35.4 53.2"/><circle cx="42" cy="36" r="3" fill="currentColor"/></svg></span>
+        <span class="text">
+          <span class="name">Joints</span>
+          <span class="desc" data-i18n="jt.desc">Joint sets on the equal-area stereonet and as traces in the tunnel cross-section.</span>
+          <span class="ref mono" data-i18n="jt.ref">Rock mechanics · Stereonet · Apparent dip</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="item" href="https://cv.onurkoc.net">
+        <span class="nr mono">06</span>
         <span class="pic"><svg viewBox="0 0 120 72" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M42 6H78V66H42Z" opacity=".4"/><circle cx="60" cy="22" r="7"/><path d="M50 40H70M50 48H70M50 56H64"/></svg></span>
         <span class="text">
           <span class="name" data-i18n="cv.name">Curriculum Vitae</span>
@@ -197,7 +208,7 @@
   </div>
 
   <footer class="mono">
-    <span>© <span id="y">2026</span> Onur Koc</span>
+    <span>© <span id="y">2026</span> Onur Koç</span>
     <span data-i18n="local">All calculations run locally in the browser</span>
   </footer>
 
@@ -218,6 +229,8 @@
       'sc.ref': 'Stahlbeton · SIA 262:2025 · EN 1992-1-1:2004',
       'sa.desc': 'Setzungsmulde über einem oder zwei Tunneln und Schadensklasse an Gebäuden.',
       'sa.ref': 'Tunnelbau · Boscardin & Cording',
+      'jt.desc': 'Kluftscharen im Schmidtschen Netz und als Spuren im Tunnelquerschnitt.',
+      'jt.ref': 'Felsmechanik · Schmidtsches Netz · Scheinbares Fallen',
       'cv.name': 'Lebenslauf',
       'cv.desc': 'Werdegang, Projekte und Erfahrung im konventionellen Tunnelbau, TBM-Vortrieb, in der Geotechnik und bei Untertagbauten.',
       'local': 'Alle Berechnungen lokal im Browser',
@@ -236,6 +249,8 @@
       'sc.ref': 'Reinforced concrete · SIA 262:2025 · EN 1992-1-1:2004',
       'sa.desc': 'Settlement trough above one or two tunnels and building damage category.',
       'sa.ref': 'Tunnelling · Boscardin & Cording',
+      'jt.desc': 'Joint sets on the equal-area stereonet and as traces in the tunnel cross-section.',
+      'jt.ref': 'Rock mechanics · Stereonet · Apparent dip',
       'cv.name': 'Curriculum Vitae',
       'cv.desc': 'Background, projects and experience in conventional tunnelling, TBM, geotechnical engineering and underground structures.',
       'local': 'All calculations run locally in the browser',
