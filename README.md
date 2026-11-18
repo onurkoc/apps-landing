@@ -7,6 +7,8 @@ Static landing page for **apps.onurkoc.net**, linking to:
 - https://groundcurve.onurkoc.net
 - https://shear.onurkoc.net
 - https://settlement.onurkoc.net
+- https://joints.onurkoc.net
+- https://groundslide.onurkoc.net
 
 ## Hosting
 
